@@ -1,0 +1,17 @@
+{
+  "name": "KABAM-UI-TEST",
+  "author": "d.trukhin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.7"
+  },
+  "scripts": {
+    "test:smoke": "npx playwright test --project=chromium --workers=1 --headed",
+    "test:smoke:all": "npx playwright test --project=chromium --project=firefox --project=webkit --workers=1",
+    "test:smoke:visible": "npx playwright test --project=chromium --workers=1 --headed",
+    "test:smoke:ui": "npx playwright test --project=chromium --headed --ui"
+  }
+}
