@@ -72,7 +72,7 @@ test.describe('Kabam landing smoke test', () => {
 
   })
 
-  test.describe('Logget checking', () => {
+  test.describe.only('Logget checking', () => {
 
     let storePage;
 
@@ -130,9 +130,9 @@ test.describe('Kabam landing smoke test', () => {
       await storePage.cardModal.waitFor({timeout: 5000});
       await storePage.cardModalButton.click();
       await storePage.payStationLoadSpinner.waitFor({state: "hidden", timeout: 6000});
-      await storePage.payStation.waitFor({timeout: 10000});
+      await storePage.payStationClose.waitFor({timeout: 10000});
       await storePage.payStationClose.click();
-      await expect(storePage.payStation).toBeHidden();
+      await expect(storePage.payStationClose).toBeHidden();
     })
 
     test('Checking logout', async () => {
