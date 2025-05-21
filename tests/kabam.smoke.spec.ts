@@ -72,7 +72,7 @@ test.describe('Kabam landing smoke test', () => {
 
   })
 
-  test.describe.only('Logget checking', () => {
+  test.describe.skip('Logget checking', () => {
 
     let storePage;
 

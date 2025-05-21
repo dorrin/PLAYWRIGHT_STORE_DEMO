@@ -38,7 +38,7 @@ export class KabamStorePage {
 
       this.page = page;
       this.gdprForm = page.locator('#gdpr-consent-form');
-      this.gdprSubmit = page.locator('#submit-button');
+      this.gdprSubmit = page.locator('[id = "accept-button"]');
       this.menuButton = page.locator('[id = "global-menu"]');
       this.menu = page.locator('[id = "menu"][class="open"]');
       this.firstBuyButton = page.locator('.new-store button').first();
@@ -71,12 +71,12 @@ export class KabamStorePage {
    
   async initialActions(url:string) {
     await this.page.goto(url);
-
+/* 
     try {
       await this.loginModalButton.waitFor({timeout: 5000});
       await this.loginModalClose.click();
       await this.loginModalButton.waitFor({state: "hidden",timeout: 2000});
-    } catch {};
+    } catch {}; */
 
     try {
       await this.gdprForm.waitFor({timeout: 5000})

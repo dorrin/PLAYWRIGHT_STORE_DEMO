@@ -5,10 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.44.1",
-    "@types/node": "^20.14.7"
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^20.14.7",
+    "playwright": "^1.52.0"
   },
   "scripts": {
+    "postinstall": "playwright install chromium",
     "test:smoke": "npx playwright test --project=chromium --workers=1 --headed",
     "test:smoke:all": "npx playwright test --project=chromium --project=firefox --project=webkit --workers=1",
     "test:smoke:visible": "npx playwright test --project=chromium --workers=1 --headed",
