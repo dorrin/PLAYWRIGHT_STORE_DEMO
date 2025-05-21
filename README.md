@@ -1,3 +1,6 @@
+## Демо смоук e2e тестов по срочному запросу от кастомера, нужно было за день, потому без наведения красоты патернами
+## возможно сайт https://store.playcontestofchampions.com/ уже недоступен
+
 ## Kabam store landing e2e smoke tests
 
 ### Requirements
