@@ -1,5 +1,7 @@
-## Демо смоук e2e тестов по срочному запросу от кастомера, нужно было за день, потому без наведения красоты патернами
-## возможно сайт https://store.playcontestofchampions.com/ уже недоступен
+#### Демо смоук e2e тестов по срочному запросу от кастомера, нужно было за день, потому без наведения красоты патернами
+#### возможно сайт https://store.playcontestofchampions.com/ уже недоступен
+#### приложено видео как работало
+
 
 ## Kabam store landing e2e smoke tests
 
@@ -30,7 +32,7 @@
 1.2. Navigate to the directory
 
 ```bash
-cd site-builder-e2e
+cd PLAYWRIGHT_STORE_DEMO
 ```
 
 1.3. Install dependencies
